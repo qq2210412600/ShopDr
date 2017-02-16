@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:28:"./tpl/admin\index_index.html";i:1487061767;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:30:"./tpl/admin\publics_login.html";i:1487214888;s:28:"./tpl/admin\index_index.html";i:1487217262;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,9 +32,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>S</b>Dr</span>
+      <span class="logo-mini"><img src="__ADMIN_IMG__/logo_small.png" alt="logo"></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Shop</b>Dr</span>
+      <span class="logo-lg"><img src="__ADMIN_IMG__/logo.png" alt="logo"></span>
     </a>
 
     <!-- Header Navbar -->

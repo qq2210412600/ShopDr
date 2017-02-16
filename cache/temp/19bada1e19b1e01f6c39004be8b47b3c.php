@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:30:"./tpl/admin\publics_login.html";i:1487139915;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:30:"./tpl/admin\publics_login.html";i:1487214888;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,12 +30,12 @@
     <p class="login-box-msg"><b>ShopDr</b>-管理系统</p>
     <form action="../../index2.html" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="帐号">
+        <span class="fa fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        <input type="password" class="form-control" placeholder="密码">
+        <span class="fa fa-lock form-control-feedback"></span>
       </div>
       <div class="row">
         <div class="col-xs-12">

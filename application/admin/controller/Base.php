@@ -28,6 +28,8 @@ class Base extends Controller
             $this->assign("admin",$user);
     	} else {
    			return $this->fetch('publics/login');
+        /* header("Location:".$this->fetch('publics/login'));
+        exit(); */
     	}
     }
 	
