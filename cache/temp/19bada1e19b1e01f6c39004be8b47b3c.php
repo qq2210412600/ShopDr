@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:30:"./tpl/admin\publics_login.html";i:1487214888;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:30:"./tpl/admin\publics_login.html";i:1487237020;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,15 +28,26 @@
 <div class="login-box">
   <div class="login-box-body">
     <p class="login-box-msg"><b>ShopDr</b>-管理系统</p>
-    <form action="../../index2.html" method="post">
+    <form action="<?php echo url('publics/doLogin'); ?>" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="帐号">
+        <input type="text" name="username" class="form-control" placeholder="帐号">
         <span class="fa fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="密码">
+        <input type="password" name="password" class="form-control" placeholder="密码">
         <span class="fa fa-lock form-control-feedback"></span>
       </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <input type="text" name="verify" class="form-control" placeholder="验证码" />
+                <i class="icon-fire"></i>
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+              <img title="点击刷新验证码" src="/index.php/admin/publics/getCaptcha" class="code-img" onClick="this.src='/index.php/admin/publics/getCaptcha?d='+Math.random();" />
+            </div>
+            <!-- /.col -->
+        </div>        
       <div class="row">
         <div class="col-xs-12">
           <div class="checkbox icheck">

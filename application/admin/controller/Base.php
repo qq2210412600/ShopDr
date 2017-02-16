@@ -18,7 +18,7 @@ class Base extends Controller
     public function _initialize()
     {
     	if (isset($_SESSION['admin_user_id'])) {
-            $this->user_db = M("User");
+            $this->user_db = db("User");
             $id = $_SESSION['admin_user_id'];
             $user = $this->user_db->where("id = ".$id)->find();
             if (!$this->check_access($id)) {
@@ -27,9 +27,8 @@ class Base extends Controller
             }
             $this->assign("admin",$user);
     	} else {
-   			return $this->fetch('publics/login');
-        /* header("Location:".$this->fetch('publics/login'));
-        exit(); */
+            header("Location:".url('publics/login'));
+            exit();
     	}
     }
 	
